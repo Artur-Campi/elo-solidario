@@ -2,6 +2,7 @@
    Cores, tipografia e componentes. Unidades em rem para respeitar o modo "texto maior". */
 
 :root {
+  color-scheme: only light;
   --vermelho: #B3122B;
   --vermelho-escuro: #8E0E22;
   --vermelho-claro: #FBE9EA;
