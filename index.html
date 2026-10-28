@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#B3122B">
+<meta name="description" content="Elo Solidário: protótipo funcional de uma plataforma de doação direta de itens básicos (ODS 1).">
+<title>Elo Solidário</title>
+<link rel="icon" href="assets/icone.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:wght@600;700;800&display=swap">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<aside class="painel" aria-label="Sobre este protótipo">
+  <div class="painel-marca">
+    <svg width="44" height="30" viewBox="0 0 48 32" fill="none" stroke="currentColor" stroke-width="3.5" aria-hidden="true"><rect x="3" y="6" width="26" height="20" rx="10"/><rect x="19" y="6" width="26" height="20" rx="10"/></svg>
+    <span>Elo Solidário</span>
+  </div>
+  <p class="painel-sub">Protótipo funcional de alta fidelidade · Interação Humano-Computador · Universidade Presbiteriana Mackenzie</p>
+  <h2>Como testar</h2>
+  <p>O app ao lado funciona como no celular. Você faz o papel de uma pessoa do bairro. As outras pessoas (doadores, recebedores e voluntários) são simuladas e respondem sozinhas.</p>
+  <h3>Tarefas sugeridas</h3>
+  <ol>
+    <li>Crie sua conta.</li>
+    <li>Encontre na vitrine uma roupa infantil perto de você e reserve.</li>
+    <li>Combine a retirada pelo chat e conclua a entrega com o código.</li>
+    <li>Publique um item para doação com foto.</li>
+    <li>Aceite o pedido de reserva do seu carrinho de bebê e confirme a entrega.</li>
+    <li>Adicione um pedido na sua lista de necessidades e depois remova.</li>
+    <li>Peça ajuda de um voluntário para buscar a geladeira.</li>
+  </ol>
+  <p class="painel-nota">Os dados ficam salvos só neste navegador.</p>
+  <button type="button" class="btn btn-contorno" data-acao="reiniciar">Recomeçar o teste do zero</button>
+</aside>
+
+<div class="aparelho">
+  <div id="app" class="app">
+    <div id="tela" class="tela"></div>
+    <nav id="nav" class="nav" aria-label="Navegação principal" hidden></nav>
+    <div id="toasts" class="toasts" aria-live="polite"></div>
+    <div id="modal" class="modal" hidden></div>
+  </div>
+</div>
+
+<noscript><p style="padding:24px;font-size:18px">Para usar o Elo Solidário, ative o JavaScript no navegador.</p></noscript>
+
+<script src="js/icones.js"></script>
+<script src="js/dados.js"></script>
+<script src="js/estado.js"></script>
+<script src="js/telas.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
