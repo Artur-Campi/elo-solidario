@@ -71,7 +71,7 @@
     if (mudouRota && rotaAtual !== r.chave) {
       var h1 = tela.querySelector('h1');
       if (h1) { h1.setAttribute('tabindex', '-1'); h1.focus({ preventScroll: true }); }
-      document.title = (h1 ? h1.textContent + ' · ' : '') + 'Elo Solidário';
+      document.title = (h1 && h1.textContent !== 'Elo Solidário' ? h1.textContent + ' · ' : '') + 'Elo Solidário';
     }
     rotaAtual = r.chave;
   }
